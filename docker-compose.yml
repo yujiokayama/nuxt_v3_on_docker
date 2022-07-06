@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  nuxt3-app:
+    build: .
+    volumes:
+      - ./app:/app
+    ports:
+      - "3000:3000"
+    tty: true
+    command: "yarn dev -o"
